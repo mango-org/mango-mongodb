@@ -1,0 +1,17 @@
+name: mango-mongodb
+version: 1.0.0
+description: Fork of jphp-mongo-ext with cool stuf :^)
+
+plugins:
+  - Gradle
+
+mongo-driver:
+  version: '3.12.2'
+
+gradle:
+  deps:
+    - "org.mongodb:mongodb-driver:%mongo-driver.version%"
+
+deps:
+  jphp-runtime: '*'
+  jphp-zend-ext: '*'
